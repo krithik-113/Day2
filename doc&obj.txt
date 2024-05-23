@@ -1,0 +1,52 @@
+Window and Document objects is crucial in JavaScript and web development. Window manages browser interactions, while Document acts as an interface for content manipulation. Using these functionalities allows developers to create interactive web experiences.
+
+Document Object:-
+accessing the document object, we can access the element in the HTML page. With the help of document objects, we can add dynamic content to our web page.
+
+Syntax:
+document.property_name;
+
+Methods of Document:   (Which is i normally use..)
+1- addEventListener()
+2- getElementById()
+3- getElementsByClassName()
+4- querySelector()
+5- querySelectorAll()
+
+Window Object:-
+The window object is the topmost object of the DOM hierarchy. It represents a browser window or frame that displays the contents of the webpage. Whenever a window appears on the screen to display the contents of the document, the window object is created. 
+
+Syntax:
+window.property_name;
+
+Methods of Window objects:
+1- setTimeout()
+2- focus()
+3- confirm()
+4- alert()
+5- prompt()
+
+Difference between document and window:
+
+1- Document:
+
+* It represents any HTML document or web page that is loaded in the browser.
+* It is loaded inside the window.
+* It is the object of window property.
+* All the tags, elements with attributes in HTML are part of the document.
+* We can access the document from a window using the window. document.
+* The document is part of BOM (browser object model) and DOM.
+* Properties of document objects such as title, body, cookies, etc can also be accessed by a window like this window, document.title
+
+2- Window:
+
+* It represents a browser window or frame that displays the contents of the webpage. 
+* It is the very first object that is loaded in the browser.
+* It is the object of the browser.
+* Global objects, functions, and variables of JavaScript are members of the window object.
+* We can access the window from the window only. i.e. window.window.
+* The window is part of BOM, not DOM.
+* Properties of the window object cannot be accessed by the document object.
+
+The other major difference is that both window object and document object have properties and methods. Few method names are same in both objects but with different behavior. Window.open() opens a new tab or window and 
+document.open() creates a blank document within the window.
